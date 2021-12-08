@@ -1,3 +1,6 @@
+Chase's quick/messy prep for first meeting:
+https://docs.google.com/document/d/11prgVd0fO7ExJUPIfpIdOxNnu9JivufxvUA82k1K6II/edit?usp=sharing
+
 ## GUI
 
 - GUI similar to `synthaser` would lower the barrier for contribution
