@@ -1,0 +1,117 @@
+{
+	"name": "",
+	"type_protein": "",
+	"category": "RiPP",
+	"subcategory": "LAP",
+	"comment": "Linear azol(in)e-containing peptides like goadsporin (AB205012) or microcin B17 (FM877811)",
+	"related": [
+		"TIGR04424",
+		"TIGR01408"
+	],
+	"cutoff": 20,
+	"neighborhood": 10,
+	"manually_curated": true,
+	"hmms": [{
+			"hmm_id": "goadsporin_like",
+			"start_seq": "",
+			"end_seq": "",
+			"start_hmm": "",
+			"end_hmm": ""
+		},
+		{
+			"hmm_id": "PF00881",
+			"start_seq": "",
+			"end_seq": "",
+			"start_hmm": "",
+			"end_hmm": ""
+		},
+		{
+			"hmm_id": "TIGR03605",
+			"start_seq": "",
+			"end_seq": "",
+			"start_hmm": "",
+			"end_hmm": ""
+		}
+	],
+	"hmmids_not_contained": [
+		"cyanobactin_synth"
+	],
+	"composition_rules": {
+		"type": "and_not",
+		"sub": [{
+				"type": "or",
+				"sub": [{
+						"type": "or",
+						"sub": [{
+								"type": "and",
+								"sub": [{
+										"type": "or",
+										"sub": [{
+												"type": "singleton",
+												"sub": [
+													"goadsporin_like"
+												]
+											},
+											{
+												"type": "singleton",
+												"sub": [
+													"PF00881"
+												]
+											},
+											{
+												"type": "singleton",
+												"sub": [
+													"TIGR03605"
+												]
+											}
+										]
+									},
+									{
+										"type": "or",
+										"sub": [{
+												"type": "singleton",
+												"sub": [
+													"YcaO"
+												]
+											},
+											{
+												"type": "singleton",
+												"sub": [
+													"TIGR03882"
+												]
+											},
+											{
+												"type": "singleton",
+												"sub": [
+													"TIGR03604"
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "singleton",
+								"sub": [
+									"TIGR03603"
+								]
+							}
+						]
+					},
+					{
+						"type": "singleton",
+						"sub": [
+							"TIGR03602"
+						]
+					}
+				]
+			},
+			{
+				"type": "singleton",
+				"sub": [
+					"cyanobactin_synth"
+				]
+			}
+		]
+	}
+}
